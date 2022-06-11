@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en>
+       <head>
+              <meta charset="utf-8">
+               <title>HEalth </Title>
+               <style type="text/css">
+               body
+               {
+                    border:1px solid red;
+                    margin:0px;
+                }
+                div#nav > ul
+                {
+                        margin:0px;
+                         padding:0px;
+                      list-style-type:none;   
+                      background-color:lightgreen; 
+                      height:50px;
+                 }
+                   div#nav> ul > li
+                   {
+                      float:left;
+                    }
+                     div#nav > ul : :after
+                     {
+                          content: " ";
+                          display:block;
+                           clear:left;
+                     }
+                          div#nav > ul > li > a
+                        {
+                           text-decoration:none;
+                            background-color:black;
+                              color:white;
+                             display:inline-block;
+                            height:50px;
+                            width:100px;
+                              text-align:center;  
+                              line-height:50px;
+                            font-family:Tahoma;
+                       }
+                        div#nav > ul > li >a:hover
+                        {
+                          background-color:lightgray;
+                           color:black; 
+                         }
+                          div#nav > ul > li:first-child
+                          
+                             {
+                                 background-color:black;
+                                 color:white;
+                                height:50px;
+                                 line-height:50px;
+                               font-family:'Monotype corsive';
+                            font-size:16pt;
+                           margin-right:10px;
+                           
+                          }
+                         
+               </style>
+
+
+       </head>
+</head>
+<body bgcolor="lightgray" >
+<div id="nav">
+                         <ul>
+                              <li> WELCOME TO HEALTH CARE</li>
+                              <li><a href="Home.html">Home</a></li>
+                               <li><a href="Contact.html">Contact</a></li>
+                               <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Register</a></li>
+                            
+                         </ul>
+                </div>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+   
+</body>
+
+</html>
